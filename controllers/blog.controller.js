@@ -1,7 +1,5 @@
 const Blog = require('../models/blog');
 
-// , , blog_create_post, blog_delete
-
  const blog_index = (req, res) => {
     Blog.find().sort({createdAt: -1})
     .then((result)=>{
